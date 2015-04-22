@@ -1,0 +1,11 @@
+.mashead {
+    margin-top: 50px;
+    padding: 0;
+}
+#carousel-example-generic {
+}
+
+#carousel-example-generic img {
+    height: 400px;
+    width: 100%;
+}
