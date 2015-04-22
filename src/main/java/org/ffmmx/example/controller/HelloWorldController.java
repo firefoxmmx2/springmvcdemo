@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HelloWorldController {
   String message="Welcome to Spring MVC!";
-  @RequestMapping("hello")
+  @RequestMapping("/hello")
   public ModelAndView showMessage(
       @RequestParam(value = "name",required = false,defaultValue = "World")
       String name
@@ -17,6 +17,25 @@ public class HelloWorldController {
     ModelAndView mv=new ModelAndView("helloworld");
     mv.addObject("message",message);
     mv.addObject("name",name);
+    return mv;
+  }
+
+  @RequestMapping("/")
+  public ModelAndView index() {
+    System.out.println("index");
+    ModelAndView mv=new ModelAndView("index");
+    return mv;
+  }
+  @RequestMapping("/index")
+  public ModelAndView index2() {
+    System.out.println("index2");
+    ModelAndView mv=new ModelAndView("index");
+    return mv;
+  }
+  @RequestMapping("/rIndex")
+  public ModelAndView rIndex() {
+    System.out.println("rIndex");
+    ModelAndView mv=new ModelAndView("rIndex");
     return mv;
   }
 }

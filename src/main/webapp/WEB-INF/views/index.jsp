@@ -16,6 +16,9 @@
   <h3>
     <a href="hello?name=firefoxmmx">Click Here</a>
   </h3>
+  <h3>
+    <a href="rIndex">Go to rIndex</a>
+  </h3>
 </center>
 </body>
 </html>
