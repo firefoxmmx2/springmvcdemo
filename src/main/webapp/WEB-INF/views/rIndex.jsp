@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh" id="topstart">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -14,7 +14,6 @@
   <script type="text/javascript" src="resources/javascripts/bootstrap.js"></script>
 </head>
 <body>
-
 <header id="rindex-header">
   <nav id="rindex-navbar" class="navbar navbar-default navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
@@ -120,13 +119,44 @@
     </div>
   </section>
 
-  section#type$.container-fluid*3>div.left>img[src=""]+div.right>div.thumbnail*3>img[src="" alt=""]+div.caption>h3[title="标题$"]+p[title="内容"]
+  <section id="type1" class="container-fluid thumbnail">
+    <div class="row">
+      <div class="col-lg-3 left">
+        <img src="resources/images/snake.jpg" alt="分类"/>
+      </div>
+
+      <div class="right">
+       <div class="col-lg-2 thumbnail">
+          <div class="caption">
+            <h3 title="标题1">标题1</h3>
+            <p title="内容">内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1</p>
+          </div>
+        </div>
+        <div class="col-lg-2 thumbnail">
+          <div class="caption">
+            <h3 title="标题2">标题2</h3>
+            <p title="内容">内容2</p>
+          </div>
+        </div>
+        <div class="col-lg-2 thumbnail">
+          <div class="caption">
+            <h3 title="标题3">标题3</h3>
+            <p title="内容">内容3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <%--div#page>(div#header>ul#nav>li*4>a)+(div#page>(h1>span)+p*2)+div#footer--%>
 </div>
 <footer id="footer" class="panel panel-footer">
-    <p style="align-self: center">
-      我也不知道该说写啥
-    </p>
+  <p style="text-align: center">
+    我也不知道该说写啥
+  </p>
 </footer>
+
+<a id="top" href="#topstart" >
+  <span class="glyphicon glyphicon-arrow-up"></span>
+</a>
 </body>
 </html>

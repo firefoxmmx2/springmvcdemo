@@ -9,3 +9,39 @@
     height: 400px;
     width: 100%;
 }
+
+
+#type1 .caption {
+    position: absolute;
+    list-style: outside none none;
+    left:50%;
+    margin-left: -30%;
+}
+#type1 .left img{
+    width: 280px;
+    height: 280px;
+}
+#type1 .thumbnail {
+    width: 260px;
+    height: 260px;
+    background: url("../images/snake.jpg");
+    background-size: 100% 100%;
+    margin: 5px 5px 5px 5px;
+}
+
+#top {
+    position: fixed;
+    z-index: 99999;
+    display: block;
+    text-align: center;
+    left:95%;
+    top: 90%;
+    background-color: lightgray;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: ghostwhite;
+}
+#top span {
+    vertical-align: middle;
+}
