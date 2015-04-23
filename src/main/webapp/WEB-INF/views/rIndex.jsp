@@ -119,8 +119,11 @@
       </div>
     </div>
   </section>
+
+  section#type$.container-fluid*3>div.left>img[src=""]+div.right>div.thumbnail*3>img[src="" alt=""]+div.caption>h3[title="标题$"]+p[title="内容"]
+  <%--div#page>(div#header>ul#nav>li*4>a)+(div#page>(h1>span)+p*2)+div#footer--%>
 </div>
-<footer id="footer" class="panel panel-default">
+<footer id="footer" class="panel panel-footer">
     <p style="align-self: center">
       我也不知道该说写啥
     </p>
