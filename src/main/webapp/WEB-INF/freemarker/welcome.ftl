@@ -1,0 +1,1 @@
+<H3>欢迎${weicomeTarget}使用FREEMARKER在座位你的模板渲染组件</H3>

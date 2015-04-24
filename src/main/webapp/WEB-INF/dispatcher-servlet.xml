@@ -19,4 +19,32 @@
                      <value>.jsp</value>
               </property>
        </bean>
+
+       <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+              <property name="templateLoaderPath" value="/WEB-INF/freemarker/"/>
+              <property name="freemarkerVariables">
+                     <map>
+                            <entry key="xml_escape" value-ref="fmXmlEscape"/>
+                     </map>
+              </property>
+       </bean>
+       <bean id="freeMarkerViewResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+              <property name="cache" value="true"/>
+              <property name="prefix" value=""/>
+              <property name="suffix"  value=".ftl"/>
+              <property name="contentType" value="text/html;chartset=UTF-8"/>
+              <property name="exposeRequestAttributes" value="true"/>
+              <property name="exposeSessionAttributes" value="true"/>
+              <property name="exposeSpringMacroHelpers" value="true"/>
+       </bean>
+       <!--<bean id="velocityConfig" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">-->
+              <!--<property name="resourceLoader" value="/WEB-INF/velocity/"/>-->
+       <!--</bean>-->
+       <!--<bean id="velocityViewResolver" class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">-->
+              <!--<property name="cache"  value="true"/>-->
+              <!--<property name="prefix"  value=""/>-->
+              <!--<property name="suffix"  value=".vm"/>-->
+       <!--</bean>-->
+
+       <bean id="fmXmlEscape" class="freemarker.template.utility.XmlEscape"/>
 </beans>

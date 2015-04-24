@@ -1,4 +1,3 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="zh" id="topstart">
 <head>
@@ -101,7 +100,7 @@
             <div class="caption">
               <h3>第二个东西</h3>
               <small>简约</small>
-              <p><#import "/welcome"/>  </p>
+              <p> </p>
             </div>
           </a>
         </div>
@@ -127,7 +126,7 @@
       </div>
 
       <div class="right">
-       <div class="col-lg-2 thumbnail">
+        <div class="col-lg-2 thumbnail">
           <div class="caption">
             <h3 title="标题1">标题1</h3>
             <p title="内容">内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1</p>
