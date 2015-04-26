@@ -89,7 +89,7 @@
               <h3>第一个东西</h3>
               <small>简约</small>
               <p>
-                描述: <@spring.bind "command.name"/>
+                描述:
               </p>
             </div>
           </a>
@@ -101,7 +101,7 @@
             <div class="caption">
               <h3>第二个东西</h3>
               <small>简约</small>
-              <p><#import "/welcome"/>  </p>
+              <p> </p>
             </div>
           </a>
         </div>

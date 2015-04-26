@@ -19,22 +19,21 @@ public class HelloWorldController {
     System.out.println("in controller");
     ModelAndView mv=new ModelAndView("helloworld");
     mv.addObject("message",message);
-    mv.addObject("name",name);
+    mv.addObject("name", name);
     return mv;
   }
 
-  @RequestMapping("/")
-  public ModelAndView index() {
+//  @RequestMapping("/")
+//  public String idx (){
+//    System.out.println("idx");
+//    return "index";
+//  }
+  @RequestMapping(value = {"/","/index"})
+  public String index(Model model) {
     System.out.println("index");
-    ModelAndView mv=new ModelAndView("index");
-    return mv;
+    return "index";
   }
-  @RequestMapping("/index")
-  public ModelAndView index2() {
-    System.out.println("index2");
-    ModelAndView mv=new ModelAndView("index");
-    return mv;
-  }
+
   @RequestMapping("/rIndex")
   public ModelAndView rIndex() {
     System.out.println("rIndex");
@@ -43,11 +42,9 @@ public class HelloWorldController {
   }
 
   @RequestMapping(value = "/rIndexFreeMarker")
-  public String rIndexFreeMarker(
-      @ModelAttribute("model")
-      Model model){
+  public String rIndexFreeMarker(Model model){
     System.out.println("rIndexFreemarker");
-    model.addAttribute("welcomeTarget","Ffmmx");
+//    model.addAttribute("welcomeTarget","Ffmmx");
     return "rIndexFreeMarker";
   }
 

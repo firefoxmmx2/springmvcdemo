@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="content-type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>首页</title>
   <link href="resources/stylesheets/bootstrap.min.css" rel="stylesheet">
-  <%--<link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css" rel="stylesheet">--%>
   <link rel="stylesheet" href="resources/stylesheets/bootstrap-theme.css">
   <link rel="stylesheet" href="resources/stylesheets/rIndex.css">
   <script type="text/javascript" src="resources/javascripts/jquery.min.js"></script>
@@ -88,7 +88,7 @@
               <h3>第一个东西</h3>
               <small>简约</small>
               <p>
-                描述: <@spring.bind "command.name"/>
+                描述:
               </p>
             </div>
           </a>
@@ -129,7 +129,7 @@
         <div class="col-lg-2 thumbnail">
           <div class="caption">
             <h3 title="标题1">标题1</h3>
-            <p title="内容">内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1</p>
+            <p title="内容"></p>
           </div>
         </div>
         <div class="col-lg-2 thumbnail">
@@ -147,7 +147,6 @@
       </div>
     </div>
   </section>
-  <%--div#page>(div#header>ul#nav>li*4>a)+(div#page>(h1>span)+p*2)+div#footer--%>
 </div>
 <footer id="footer" class="panel panel-footer">
   <p style="text-align: center">
