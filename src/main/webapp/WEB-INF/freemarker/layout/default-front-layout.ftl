@@ -49,24 +49,26 @@
 </div>
 </#macro>
 
-<#macro indexLayout title="首页" head="indexHead" header="indexHeader" footer="indexFooter">
+<#macro indexLayout title="首页" head=indexHead header=indexHeader footer=indexFooter>
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-  <@indexHead />
+  <@head />
   <title>${title!""}</title>
 </head>
 <body>
 <header id="header">
-  <@indexHeader/>
+  <@header/>
 </header>
 <section id="body">
  <#nested />
 </section>
 <footer id="footer">
-  <@indexFooter/>
+  <@footer/>
 </footer>
 </body>
 </html>
 </#macro>
+
+<#--可以直接在参数里面写赋值模板名称,这点是比较牛逼-->
 
