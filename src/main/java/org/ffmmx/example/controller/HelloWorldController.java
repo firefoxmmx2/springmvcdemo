@@ -72,6 +72,10 @@ public class HelloWorldController {
     return "springbind2";
   }
 
+  @RequestMapping("/indexfm")
+  public String indexfm(Model model) {
+    return "indexfm";
+  }
   private class Command {
     private String name;
     private String version;

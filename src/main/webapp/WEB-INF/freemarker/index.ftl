@@ -21,6 +21,9 @@
     <a href="springbind">Go to spring bind 2 </a>
   </h3>
   <h3>
+    <a href="indexfm">Go to Nested Freemarker Index </a>
+  </h3>
+  <h3>
     ${name!""}
   </h3>
 </center>
