@@ -40,10 +40,49 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    <div class="row">
-      <div class="col-lg-12">
+  </section>
+  <section class="container">
+    <div class="row product">
+      <div class="col-lg-4 col-md-6">
+        <div class="thumbnail">
+          <img src="resources/images/snake.jpg" alt="产品1">
+          <div class="caption">
+            <h3>产品1</h3>
+            <p>描述</p>
+          </div>
+        </div>
       </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="thumbnail">
+          <img src="resources/images/snake.jpg" alt="产品2">
+          <div class="caption">
+            <h3>产品2</h3>
+            <p>描述</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="thumbnail">
+          <img src="resources/images/snake.jpg" alt="产品3">
+          <div class="caption">
+            <h3>产品3</h3>
+            <p>描述</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
+<script type="text/javascript">
+  $(function () {
+    $('#rindex-navbar form[role=search] input:text').focus(function () {
+      if(!$(this).hasClass("searchfocus"))
+        $(this).addClass("searchfocus");
+    }).blur(function () {
+      if($(this).hasClass("searchfocus"))
+        $(this).removeClass("searchfocus");
+    })
+  });
+</script>
 </@layout.indexLayout>
 

@@ -45,3 +45,47 @@
 #top span {
     vertical-align: middle;
 }
+
+.product img{
+    width: 260px;
+    height: 240px;
+}
+@keyframes searchfocus {
+    0% {background: white;}
+    25% {width: 112px!important;background: yellow;}
+    50% {width:224px!important;background: red;}
+    75% {width: 336px!important;background: blue}
+    100% {width: 450px!important;background: black;}
+}
+@-moz-keyframes searchfocus {
+    0% {background: white;}
+    25% {width: 112px!important;background: yellow;}
+    50% {width:224px!important;background: red;}
+    75% {width: 336px!important;background: blue}
+    100% {width: 450px!important;background: black;}
+}
+@-o-keyframes searchfocus {
+    0% {background: white;}
+    25% {width: 112px!important;background: yellow;}
+    50% {width:224px!important;background: red;}
+    75% {width: 336px!important;background: blue}
+    100% {width: 450px!important;background: black;}
+}
+@-webkit-keyframes searchfocus {
+    0% {background: white;}
+    25% {width: 112px!important;background: yellow;}
+    50% {width:224px!important;background: red;}
+    75% {width: 336px!important;background: blue}
+    100% {width: 450px!important;background: black;}
+}
+
+.searchfocus {
+    animation: searchfocus 5s;
+    -moz-animation:searchfocus 5s; /* Firefox */
+    -webkit-animation:searchfocus 5s; /* Safari and Chrome */
+    -o-animation:searchfocus 5s; /* Opera */
+}
+
+/*#rindex-navbar .form-group .form-control {*/
+    /*width:200px;*/
+/*}*/

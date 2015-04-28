@@ -13,13 +13,13 @@
 
 <#macro indexHeader>
 <nav id="rindex-navbar" class="navbar navbar-default navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
+  <div class="container-fluid navbar-form">
     <div class="navbar-brand">
       <ul class="navbar-nav nav">
         <li>LOGO标题位置</li>
       </ul>
     </div>
-    <div class="navbar-collapse collapse">
+    <div class="container">
       <ul class="navbar-nav nav">
         <li><a href="#">链接1</a> </li>
         <li><a href="#">链接2</a> </li>
@@ -28,9 +28,9 @@
         <li><a href="#">链接5</a> </li>
       </ul>
 
-      <form class="navbar-form navbar-right" role="search">
+      <form class="navbar-right" role="search">
         <div class="form-group">
-          <input class="form-control" type="text" placeholder="你想要找什么?">
+          <input class="form-control" type="text" name="keywords" placeholder="你想要找什么?">
           <button class="navbar-btn btn btn-default">
             搜索
           </button>
@@ -43,9 +43,43 @@
 
 <#macro indexFooter>
 <div class="panel panel-footer">
-  <p style="text-align: center">
-    我也不知道该说写啥
-  </p>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <dl>
+          <dt>说明1</dt>
+          <dd><a href="#">链接1</a> </dd>
+          <dd><a href="#">链接2</a> </dd>
+          <dd><a href="#">链接3</a> </dd>
+        </dl>
+      </div>
+      <div class="col-lg-3">
+        <dl>
+          <dt>说明2</dt>
+          <dd><a href="#">链接1</a> </dd>
+          <dd><a href="#">链接2</a> </dd>
+          <dd><a href="#">链接3</a> </dd>
+        </dl>
+      </div>
+      <div class="col-lg-3">
+        <dl>
+          <dt>说明3</dt>
+          <dd><a href="#">链接1</a> </dd>
+          <dd><a href="#">链接2</a> </dd>
+          <dd><a href="#">链接3</a> </dd>
+        </dl>
+      </div>
+      <div class="col-lg-3">
+        <dl>
+          <dt>说明4</dt>
+          <dd><a href="#">链接1</a> </dd>
+          <dd><a href="#">链接2</a> </dd>
+          <dd><a href="#">链接3</a> </dd>
+        </dl>
+      </div>
+    </div>
+    <p>版权声明:xxxxxxxxxxxxxxxxxxx</p>
+  </div>
 </div>
 </#macro>
 
